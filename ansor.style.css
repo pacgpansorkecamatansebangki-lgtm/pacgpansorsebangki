@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #198754;
+}
+
+.navbar a {
+  color: white !important;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://i.ibb.co/3M9FQ5P/banner-ansor.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 160px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero h3, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #198754;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gallery img {
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
